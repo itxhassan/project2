@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .banner{
+            background-image: url("libi.jpeg");
+            background-size: cover;
+        }
+        .news{
+            border-radius: 30% 70% 100% 0% / 0% 0% 100% 100% ;
+            height:50px;
+            width: 150px;
+            background-color: rgb(68,67,67);
+        }
+    </style>
+</head>
+<body class="bg-gray-800">
+    <nav class="fixed w-full">
+        <div class="logo  justify-between items-center flex  mx-auto p-5 w-5/6 ">
+            <img src="logo.png" alt="">
+
+            <ul class="hidden md:flex  gap-3 justify-center items-center" >
+
+                <li><a class="text-white font-bold" href="">HOME</a></li>
+                <li><a class="text-white font-bold" href="">ABOUT </a></li>
+                <li><a class="text-white font-bold" href="">CONTACT</a></li>
+                <li><a class="text-white font-bold" href="">SERVICES</a></li>
+                <li><a class="text-white font-bold" href="">ENGLISH</a></li>
+            
+                <div>
+                    <button  class="bg-white rounded-md p-1 text-black">SIGN IN</button>
+     
+                 </div>
+                 <div  class="text-white">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-google"></i>
+                 </div>            
+            </ul> 
+            
+            <button id="toggle" class="block md:hidden bg-white">open</button>
+            <div id="sidebar" class="hidden fixed top-0 right-0 h-screen w-[350px] bg-red-200 p-10">
+                <div class="text-right">
+
+                    <button class="text-3xl font-bold cursor-pointer" id="closeBtn" >X</button>
+                </div>
+                        <ul class="" >
+
+                            <li><a class="text-white font-bold" href="">HOME</a></li>
+                            <li><a class="text-white font-bold" href="">ABOUT </a></li>
+                            <li><a class="text-white font-bold" href="">CONTACT</a></li>
+                            <li><a class="text-white font-bold" href="">SERVICES</a></li>
+                            <li><a class="text-white font-bold" href="">ENGLISH</a></li>
+                            </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="h-[570px]  pt-18 flex justify-center items-center text-white  banner">
+
+
+        <div class="text-center  max-w-sm flex items-center flex-col gap-5">
+            <h1 class="font-extrabold text-5xl capitalize">sharjah <span class="text-[#A46640]">library</span></h1>
+         <p class="max-w-lg text-sm">The library is a haven of knowledge, offering a quiet space for reading, research, and learning. It houses a vast collection of books, journals, and digital resources for all ages and interests. </p>
+      
+          <div class="rounded-md flex w-5/6 mx-auto ">
+
+            <input type="text" class=" p-1 flex-1 rounded-l-full">
+            <button class="bg-[#A46640] rounded-r-full p-1">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+
+
+          <button  class="bg-white text-black rounded-md max-w-fit px-5 py-2">learn about us</button>
+      
+          
+      
+      
+        </div>
+        
+
+    </div>
+
+    <div class=" pt-3 ">
+        <div class="w-5/6 flex gap-5 h-22 mx-auto">
+            <div class="news">
+                <h1 class="p-2">NEWS Updates</h1>
+            </div>
+            <div class="justify-content-center align-items-center">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae exercitationem sapiente eaque?</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div>
+        <div class="w-5/6 my-5 mx-auto ">
+            <h1 class="text-4xl text-white font-bold">
+                The Most <span style="color: brown;">Lattest Books</span>
+            </h1>
+
+        </div>
+        <div class="w-5/6 mx-auto grid grid-cols-1 md:grid-cols-4 place-items-center">
+            <div class="my-10 md:my-0">
+
+                <div class="w-[200px] rounded p-4 bg-gray-600">
+                    <img class="h-64" src="img1.png"  alt="">
+                    
+                </div>
+                <div class="flex flex-col md:text-left text-center gap-3">
+
+                    <h3 class="text-white">CLAIR</h3>
+                    <p class="flex gap-1 max-md:justify-center text-white"><img src="Vector.png" alt="">4.5</p>
+                    <h6 class="text-gray-500 font-bold">AUTHOR</h6>
+                    <p class="text-white"> RUPI KAUR</p>
+                    
+                </div>
+            </div>
+            <div class="my-10 md:my-0">
+
+                <div class="w-[200px] rounded p-4 bg-gray-600">
+                    <img class="h-64" src="img2.png"  alt="">
+                    
+                </div>
+                <div class="flex flex-col md:text-left text-center gap-3">
+
+                    <h3 class="text-white">CLAIR</h3>
+                    <p class="flex gap-1 max-md:justify-center text-white"><img src="Vector.png" alt="">4.5</p>
+                    <h6 class="text-gray-500 font-bold">AUTHOR</h6>
+                    <p class="text-white"> RUPI KAUR</p>
+                    
+                </div>
+            </div>
+
+            <div class="my-10 md:my-0">
+
+                <div class="w-[200px] rounded p-4 bg-gray-600">
+                    <img class="h-64" src="img3.png"  alt="">
+                    
+                </div>
+                <div class="flex flex-col md:text-left text-center gap-3">
+
+                    <h3 class="text-white">CLAIR</h3>
+                    <p class="flex gap-1 max-md:justify-center text-white"><img src="Vector.png" alt="">4.5</p>
+                    <h6 class="text-gray-500 font-bold">AUTHOR</h6>
+                    <p class="text-white"> RUPI KAUR</p>
+                    
+                </div>
+            </div>
+
+            <div class="my-10 md:my-0">
+
+                <div class="w-[200px] rounded p-4 bg-gray-600">
+                    <img class="h-64" src="img4.png"  alt="">
+                    
+                </div>
+                <div class="flex flex-col md:text-left text-center gap-3">
+
+                    <h3 class="text-white">CLAIR</h3>
+                    <p class="flex gap-1 max-md:justify-center text-white"><img src="Vector.png" alt="">4.5</p>
+                    <h6 class="text-gray-500 font-bold">AUTHOR</h6>
+                    <p class="text-white"> RUPI KAUR</p>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="my-20   ">
+
+        <div class="w-5/6 p-4 bg-gray-600 justify-center items-center  h-fit md:h-[400px]  mx-auto flex max-md:flex-col">
+            <div class="flex-1 flex flex-col justify-between h-full   gap-2 ">
+                <h1 class="text-white text-2xl font-bold">History of <span class="text-orange-900">Sharjah Library</span></h1>
+                <p class="text-white">The Sharjah Public Library was established in 1989 as part of Sharjah's cultural development efforts. It began as a small community library and has since grown into a significant cultural and knowledge center. The library is part of the Sharjah Libraries Network, which includes several specialized libraries across the emirate. It offers a wide range of services, including digital resources, events, and programs for all age groups. The library reflects Sharjah's commitment to fostering education, innovation, and cultural exchange.</p>
+            <div>
+                <p class="text-right">200/300</p>
+
+                
+                <div class="h-3 w-100 bg-gray-800 relative rounded">
+                    <div class="h-3 absolute top-0 left-0 w-[60%] bg-[#A46640] rounded-r-full">
+
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+
+            <div class=" flex justify-center my-10 md:my-0">
+                <img src="image.png"   class="max-md:w-2/3" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="w-4/6 flex flex-col gap-10 md:gap-0 md:flex-row  items-center my-20 justify-between mx-auto ">
+        <div class="h-fit w-52 text-center flex flex-col gap-2">
+           
+                
+                <div class="flex justify-center">
+
+                    <h1 class="relative w-fit">
+                        <i class="fa-solid text-white fa-magnifying-glass "></i>
+                        <div class="absolute h-6 w-6 rounded-full bg-[#7A7A7A] -bottom-3 -z-10 -right-3">
+                            
+                        </div>
+                        
+                    </h1>
+                </div>
+            
+            <h4 class="font-bold text-white ">Catogories</h4>
+            <p class="text-sm font-bold text-[#7A7A7A]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="font-bold text-white">more info</button>
+        
+        
+        </div>
+
+
+        <div class="h-fit w-52 text-center flex flex-col gap-2">
+           
+                
+            <div class="flex justify-center">
+
+                <h1 class="relative w-fit">
+                    <i class="fa-solid  text-white fa-xl fa-file-invoice"></i>
+                    <div class="absolute h-6 w-6 rounded-full bg-[#7A7A7A] -bottom-3 -z-10 -right-3">
+                        
+                    </div>
+                    
+                </h1>
+            </div>
+        
+        <h4 class="font-bold text-white ">Register now</h4>
+        <p class="text-sm font-bold text-[#7A7A7A]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="font-bold text-white">more info</button>
+    
+    
+    </div>
+
+
+    <div class="h-fit w-52 text-center flex flex-col gap-2">
+           
+                
+        <div class="flex justify-center">
+
+            <h1 class="relative w-fit">
+                <i class="fa-solid text-white fa-magnifying-glass "></i>
+                <div class="absolute h-6 w-6 rounded-full bg-[#7A7A7A] -bottom-3 -z-10 -right-3">
+                    
+                </div>
+                
+            </h1>
+        </div>
+    
+    <h4 class="font-bold text-white ">Books club</h4>
+    <p class="text-sm font-bold text-[#7A7A7A]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <button class="font-bold text-white">more info</button>
+</div>
+    </div>
+
+    <div class="flex  justify-between w-5/6 mx-auto px-5 my-5">
+        <div class="flex gap-5">
+
+            <h1 class="font-bold text-2xl text-white">Lattest <span class=" text-[#A46640]">NEWS</span></h1>
+            <h1 class="font-bold text-2xl text-white">Upcomong events</h1>
+            
+        </div>
+
+        <button class="text-white text-sm text-xl flex gap-2 items-center">more info <i class="fa-solid fa-2xs h-5 w-5 flex justify-center items-center rounded-full bg-[#A46640] fa-arrow-right"></i></button>
+    </div>
+
+
+    <div class="flex md:flex-row flex-col justify-center w-5/6 mx-auto  gap-10">
+        <div class="flex-1 h-fit bg-[#222222] p-4 rounded-md">
+            <img src="img5.png" class="h-[70%] rounded-md w-full object-cover " alt="">
+            <div class="flex flex-col mt-3 gap-3">
+
+                <h1 class="text-white ">SPL honours winners of 24th Sharjah Libraries' Literature Award</h1>
+                <p class=" text-[#7A7A7A] text-xs">Oct 02, 2024</p>
+                <button class="text-white flex items-center gap-2">read more <i class="fa-solid fa-2xs h-5 w-5 flex justify-center items-center rounded-full bg-[#A46640] fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="flex-1  h-fit bg-[#222222] p-4 rounded-md">
+            <img src="img6.png" class="h-[70%] rounded-md w-full object-cover " alt="">
+            <div class="flex flex-col mt-3 gap-3">
+
+                <h1 class="text-white ">SPL honours winners of 24th Sharjah Libraries' Literature Award</h1>
+                <p class=" text-[#7A7A7A] text-xs">Oct 02, 2024</p>
+                <button class="text-white flex items-center gap-2">read more <i class="fa-solid fa-2xs h-5 w-5 flex justify-center items-center rounded-full bg-[#A46640] fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="flex-1  h-fit bg-[#222222] p-4 rounded-md">
+            <img src="img7.png" class="h-[70%] rounded-md w-full object-cover " alt="">
+            <div class="flex flex-col mt-3 gap-3">
+
+                <h1 class="text-white ">SPL honours winners of 24th Sharjah Libraries' Literature Award</h1>
+                <p class=" text-[#7A7A7A] text-xs">Oct 02, 2024</p>
+                <button class="text-white flex items-center gap-2">read more <i class="fa-solid fa-2xs h-5 w-5 flex justify-center items-center rounded-full bg-[#A46640] fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+ <div class="mt-20  flex-col md:flex-row   flex ">
+
+    <div class="p-4  items-center flex flex-1">
+
+        
+        <div class="flex pl-10 flex-col justify-center w-[500px] items center ">
+            <h1 class="text-white text-2xl font-bold">SEE OUR <span class="text-[#A46640]">LATTEST POSTS</span></h1>
+            <p class="text-[#7A7A7A]">Check out our latest posts for exciting updates and insights! Stay connected and explore fresh content across a variety of topics. Don't miss out—follow us for more!</p>
+            <p class="gap-4 flex items-center text-white "><i class="fa-brands fa-instagram"></i>Follow Sharjah Library <button class="text-white flex items-center gap-2"><i class="fa-solid fa-2xs h-5 w-5 flex justify-center items-center rounded-full bg-[#A46640] fa-arrow-right"></i></button></p>
+            
+            
+        </div>
+        
+    </div>
+    <div class="flex gap-4 flex-2  justify-center mx-auto" >
+        <img src="img9.png" class="md:w-full w-[96px]"   alt=""/>
+        <img class="mt-10 md:w-full w-[96px]"  src="img10.png" alt=""/>
+        <img src="img8.png"  class="md:w-full w-[96px]" alt=""/>
+
+        
+    </div>
+
+ </div>
+
+ <div class="flex justify-between items-center my-10 px-3">
+    
+    <div>
+        <h1 class="text-white text-xl font-bold">OUR LATTEST <span class="text-[#A46640]">TWEETS</span></h1>
+    </div>
+    <div>
+        <P class="flex gap-4 text-white items-center">
+            FOLLOW SHARJAH LIBRARY
+            <button class="text-white flex items-center gap-2"><i class="fa-solid fa-2xs h-5 w-5 flex justify-center items-center rounded-full bg-[#A46640] fa-arrow-right"></i></button>
+        </P>
+    </div>
+
+ </div>
+
+ <div class="w-4/6 flex max-md:flex-col  gap-6 justify-center mx-auto ">
+
+
+    <!-- card -->
+    <div class=" w-full md:w-64 bg-[#222222] p-3 rounded">
+
+        <div class="flex  items-center justify-between">
+
+            <div class="flex gap-3 items-center">
+                <img src="302.png" alt="">
+                <h2 class="text-white">UAIelements</h2>
+            </div>
+            <h1>T</h1>
+        </div>
+        <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veritatis cumque officiis explicabo ad incidunt </p>
+        <p class="text-blue-600 text-sm my-4">#Sharjah_Public_Libraries #library</p>
+        <p class="text-white text-xs">02:05AM - Tue Jan 2022 </p>
+        <p class="text-white text-xs">2 Retweet . 1 Like</p>
+
+    </div>
+
+
+    <div class=" w-full md:w-64 bg-[#222222] p-3 rounded">
+
+        <div class="flex  items-center justify-between">
+
+            <div class="flex gap-3 items-center">
+                <img src="302.png" alt="">
+                <h2 class="text-white">UAIelements</h2>
+            </div>
+            <h1>T</h1>
+        </div>
+        <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veritatis cumque officiis explicabo ad incidunt </p>
+        <p class="text-blue-600 text-sm my-4">#Sharjah_Public_Libraries #library</p>
+        <p class="text-white text-xs">02:05AM - Tue Jan 2022 </p>
+        <p class="text-white text-xs">2 Retweet . 1 Like</p>
+
+    </div>
+
+
+    <div class=" w-full md:w-64 bg-[#222222] p-3 rounded">
+
+        <div class="flex  items-center justify-between">
+
+            <div class="flex gap-3 items-center">
+                <img src="302.png" alt="">
+                <h2 class="text-white">UAIelements</h2>
+            </div>
+            <h1>T</h1>
+        </div>
+        <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veritatis cumque officiis explicabo ad incidunt </p>
+        <p class="text-blue-600 text-sm my-4">#Sharjah_Public_Libraries #library</p>
+        <p class="text-white text-xs">02:05AM - Tue Jan 2022 </p>
+        <p class="text-white text-xs">2 Retweet . 1 Like</p>
+
+    </div>
+
+
+    </div>
+
+ </div>
+
+
+
+
+   
+    <script>
+        document.getElementById("toggle").addEventListener("click", function(){
+            document.getElementById("sidebar").classList.toggle("hidden")
+            
+        })
+        document.getElementById("closeBtn").addEventListener("click", function(){
+            document.getElementById("sidebar").classList.toggle("hidden")
+        })
+    </script>
+</body>
+</html>
